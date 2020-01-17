@@ -1,0 +1,43 @@
+* {
+	position:relative;
+}
+header{
+		width: 100%;
+		height: 30vw;
+		position: absolute;
+		background-position: bottom;
+		background-image: url("fon1.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+.titulo {
+		font-family: 'Shrikhand', cursive;
+		color: white;
+		font-size: 6vw;
+		top:0;
+		right: 0;
+}
+body {
+		background-image: url("fon2.jpg");
+}
+.logo {
+		height: 40vh;
+		width: 40vh;
+		display: flex;
+		}
+.texto {
+			display:flex;
+			flex-direction: column;
+			justify-content: center;
+			margin:2vh;
+			font-size: 4vh;
+			color: black;
+			background-color: #ffffff99;
+		}
+.sub {
+			background-color: #bada55;
+			color:white;
+			text-align: center;
+			font-size: 5vh;
+			height: 7vh;
+}
