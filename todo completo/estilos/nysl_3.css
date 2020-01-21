@@ -5,8 +5,8 @@
 		width: 100%;
 		height: 30vw;
 		position: absolute;
-		background-position: bottom;
-		background-image: url("fon1.jpg");
+		background-position: bottom;										/*imagen de encabezado*/
+		background-image: url("../imagenes/fon1.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 }
@@ -14,14 +14,14 @@
 		height: 20vw;
 		width: 20vw;
 		position: absolute;
-		top: 9vw;
+		top: 9vw;															/*imagen de messi izquierdo*/
 		left: 0;
 		z-index: 1;
 }
 .messi2 {
 		height: 20vw;
 		width: 15vw;
-		position:absolute;
+		position:absolute;													/*ìmagen de messi derecho*/
 		top:9vw;
 		right: 0;
 		z-index: 1;
@@ -29,18 +29,16 @@
 .logo {
 		height: 9vw;
 		right: 10vw;
-		width: 9vw;
-		position:absolute;
+		width: 9vw;																				
+		position:absolute;													/*logo*/
 		top:21vw;
-		
 		z-index: 2;
-		/*transition: width 2s, height 2s, transform 1s;*/
-		animation: mygiro 3s linear infinite;
+		animation: mygiro 3s linear infinite;	
 		}
 .titulo{
 		font-family: 'Shrikhand', cursive;
 		color:#0D78E2;
-		font-size:6vw;
+		font-size:6vw;								
 		height: 30vw;
 		text-shadow: 0 1px 0 #ccc, 
                0 2px 0 #c9c9c9,
@@ -48,7 +46,7 @@
                0 4px 0 #b9b9b9,
                0 5px 0 #aaa,
                0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),										/*efecto 3D en el titulo*/
                0 1px 3px rgba(0,0,0,.3),
                0 3px 5px rgba(0,0,0,.2),
                0 5px 10px rgba(0,0,0,.25),
@@ -65,7 +63,7 @@
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
                0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
+               0 5px 0 #aaa,											/*efecto 3D en el subtitulo*/
                0 6px 1px rgba(0,0,0,.1),
                0 0 5px rgba(0,0,0,.1),
                0 1px 3px rgba(0,0,0,.3),
@@ -77,22 +75,20 @@
  
                
 }
-.imagen:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+
 body {
-		background-image: url("fon2.jpg");
+		background-image: url("../imagenes/fon2.jpg");
 		background-repeat: repeat;
-			background-size: contain;
+			background-size: contain;									/*imagen de fondo general*/
 			background-position: top;
 			overflow-x: hidden;
-			/*overflow: auto;*/
-			/*height: 500vw;*/
 		}
 .links {
 
 		position: sticky;
-		top:0;
+		top:110;
 		z-index: 99;
-		display: flex;
+		display: flex;													/*diseño y sticky de los link*/
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
@@ -103,15 +99,13 @@ body {
 .links a {
 		border: solid;
 		border-width: 1vh;
-		border-color: black;
+		border-color: black;											
 		color: white;
-		background: linear-gradient(to bottom, blue, black);
+		background: linear-gradient(to bottom, blue, black);			/*efecto degradado en los links*/
 		text-decoration: none;
 }
 
-.uno {
-		background: linear-gradient(to bottom, green, black);
-}
+
 .dos {	
 		color: blue;
 		background:none;
@@ -122,15 +116,15 @@ body {
 			flex-direction: column;
 			justify-content: center;
 			margin:2vh;
-			font-size: 4vh;
+			font-size: 4vh;												/*diceño de texto del cuerpo*/
 			color: black;
 			background-color: #ffffff99;
 		}
 .cuatro {
-		margin: 2vh;
+		margin: 2vh; 													/*espaciado en pagina de home*/
 }
 .cinco {
-		margin-left:10vh;
+		margin-left:10vh;												/*espaciado en pagina de home*/
 }
 .subrayo {
 			text-decoration: underline;
@@ -139,56 +133,49 @@ body {
 	{
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
+		flex-wrap: wrap;												/*diseño de el select de colegios*/
 		justify-content: space-around;
 		align-items: flex-end;		
 	}
 .mapa {
 	width:	100%;
-	height: 200;
-	border:0; 
+	height: 200;														/*diseño de los mapas*/
+	border:0; 			
 }
 .tab , .tab td, .tab th{
 		border:6px solid black;
-		border-collapse: collapse;
+		border-collapse: collapse;										/*diseño de las tablas*/
 		background-color:green;
 }
 ul,ol,li {
-	margin:1vw;
+	margin:1vw;															/*espaciado de las listas*/
 }
 .fifa{
-		text-align: center;
+		text-align: center;									
 }
 form>* {margin-bottom:2vh;}
 input[type=text]
 	{
 		border:0px;
-		border-bottom: 0.3vh solid black;
+		border-bottom: 0.3vh solid black;								/*diseño de los formularios*/
 		background-color: transparent;
 	}
 input[type=submit]
 	{
 		display: block;
-		margin: auto;
+		margin: auto;													/*diseño de los input*/
 		margin-top:2vh;
 		margin-bottom: 2vh;
 	}
 @keyframes mymove {
   0%   {left: 0%;}
   25% {color:green;}
-  50% {left: 78%; color:red;}
+  50% {left: 78%; color:red;}											/*desplazamiento del subtitulo*/
   75% {color:yellow;}
   100% {left:0%; }
 }
-@keyframes mymov {
-  0%   {left: -28%;}
-  25% {color:green;}
-  50% {color:red;}
-  75% {color:yellow;}
-  100% {left:122%;}
-}
 @keyframes mygiro {
-  0%   {transform: rotate(0deg);}
+  0%   {transform: rotate(0deg);}										/*giro del logo*/
   100%   {transform: rotate(360deg);}
 }
 .animacion {
@@ -208,7 +195,7 @@ input[type=submit]
 	{
 			display: none;
 	}
-.menu section:target 
+.menu section:target 												/*cambio de paginas*/
 	{
 		display: block;
 	}
