@@ -1,0 +1,21 @@
+*{		font-family: 'Kaushan Script', cursive;
+}
+.navbg
+	{
+		background-color: #DDD;
+		height: 7vh;
+		margin:2vh;
+	}
+.logo
+	{
+		height: 10vh;
+	}
+.imghome
+	{
+		height: 60vh;
+	}
+.filtro
+	{
+		display: flex;
+		justify-content: space-between;
+	}
