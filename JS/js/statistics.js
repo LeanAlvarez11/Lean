@@ -1,5 +1,5 @@
-function main (){
-// let members =data.results[0].members.filter(e => e.total_votes != 0)
+
+let members =data.results[0].members.filter(e => e.total_votes != 0)
 let auxd = 0
 let auxr = 0
 let auxi = 0
@@ -136,4 +136,4 @@ dibujarTabla(stats,null,"#total",null)
 dibujarTabla(stats,"missed_votes_pct","#most","most")
 dibujarTabla(stats,"missed_votes_pct","#least","least")
 dibujarTabla(stats,"votes_with_party_pct","#most_loyal","most_loyal")
-dibujarTabla(stats,"votes_with_party_pct","#least_loyal","least_loyal")}
+dibujarTabla(stats,"votes_with_party_pct","#least_loyal","least_loyal")
